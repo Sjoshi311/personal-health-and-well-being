@@ -2,25 +2,49 @@
 #include<math.h>
 #include<stdlib.h>
 #include<string.h>
-void AGE(int *age)
+int AGE(int *age)
 {
     printf("Age:");
+    printf("\n");
     scanf("%d",&age);
     if(age<=0||age>=123)
     {
-    fflush(stdin);
     printf("INVALID AGE ENTER AGAIN\n");
     return AGE(*age);
     }
-int GEN(char gen)
+}
+int GEN(char *gen)
 {
     fflush(stdin);
+    char male[3]="M",female[3]="F";
     printf("Gender(M/F):");
-    scanf("%c",&gen);
+    scanf("%c",gen);
+    int s=strcmp(gen,male);
+    int s1=strcmp(gen,female);
+    if(s==0)
+    {
+    printf("");
+    }
+    else if (s1==0)
+    {
+    printf("");
+    }
+    else
+    {
+        while(s!=0||s1!=0)
+        {
+        return GEN(gen);
+        }
+    }
+
 }
-//int (float calorie)
-//printf("Calories intake");
-  //  scanf("%f",&calorie);
+
+int (float calorie)
+{
+printf("Calories intake");
+    scanf("%f",&calorie);
+
+}
 int BMI(float *height,float *weight)
 {
     float *b,BMI1;
@@ -37,13 +61,17 @@ int BMI(float *height,float *weight)
     printf("\t\t\t|Weight(kg)");
     scanf("%f",weight);
     printf("\n\n");
-    //printf("\t\t\t%f\n\n",*height);
     *b=(*weight)/((*height)*(*height));
-    printf("\t\t\THE BMI IS%f\n\n",*b);
+    printf("\t\t\THE BMI IS:%f\n\n",*b);
 }
 int main()
 {
-    float height1,weight1;
+    char gender[3];
+    float height1,weight1,age;
+    //*gen=gender;
     printf("\t\t\t********************HEALTH AND WELLNESS PROGRAMME********************\n");
     BMI(&height1,&weight1);
+    GEN(&gender);
+    AGE(&age);
 }
+

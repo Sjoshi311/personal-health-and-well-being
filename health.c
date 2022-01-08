@@ -2,6 +2,10 @@
 #include<math.h>
 #include<stdlib.h>
 #include<string.h>
+int dietplan()
+{
+if
+}
 int AGE(int *age)
 {
     printf("Age:");
@@ -23,27 +27,25 @@ int GEN(char *gen)
     int s1=strcmp(gen,female);
     if(s==0)
     {
-    printf("");
+    //return CALO(calo);
+    printf("male\n");
     }
     else if (s1==0)
     {
-    printf("");
+    //return CALO(calo);
+    printf("FEMALE DIET PLAN");
     }
     else
     {
-        while(s!=0||s1!=0)
-        {
-        return GEN(gen);
-        }
+    printf("CHOOSE FROM(M/F)\n\n");
+    GEN(gen);
     }
-
 }
-
-int (float calorie)
+int CALO(float *calo)
 {
 printf("Calories intake");
-    scanf("%f",&calorie);
-
+scanf("%f",*calo);
+printf("%f",calo);
 }
 int BMI(float *height,float *weight)
 {
@@ -67,11 +69,13 @@ int BMI(float *height,float *weight)
 int main()
 {
     char gender[3];
-    float height1,weight1,age;
+    float height1,weight1,Calo;
+    int age;
     //*gen=gender;
     printf("\t\t\t********************HEALTH AND WELLNESS PROGRAMME********************\n");
     BMI(&height1,&weight1);
-    GEN(&gender);
     AGE(&age);
+    GEN(&gender);
+    printf("the age is:%d ",age);
 }
 

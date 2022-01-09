@@ -206,7 +206,7 @@ int GEN()
     else
     {
     printf("\t\t\tCHOOSE FROM(M/F)\n\n");
-    return GEN(gen,age,calo);
+    return GEN();
     }
 
 }

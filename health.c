@@ -243,3 +243,4 @@ int main()
     bmi(height1,weight1,b);
     GEN();
 }
+

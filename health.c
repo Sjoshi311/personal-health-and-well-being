@@ -9,17 +9,18 @@ int GEN()
     char male[3]="M",female[3]="F";
     int age,calo;
     char gen[3];
+    float *b;
     //calories
-    printf("\t\t\tCalories intake");
-    scanf("%d",&calo);
+    //printf("\t\t\tCalories intake");
+    //scanf("%d",&calo);
     //age
-    printf("Age:");
+    printf("\t\t\tAge:");
     printf("\n");
     scanf("%d",&age);
 
     if(age<=0||age>=123)
     {
-    printf("INVALID AGE ENTER AGAIN\n");
+    printf("\t\t\tINVALID AGE ENTER AGAIN\n");
     return GEN(gen,age,calo);
     }
     //gender
@@ -29,12 +30,12 @@ int GEN()
     int s1=strcmp(gen,female);
     if(s==0)
     {
-     if(calo<1000||calo>3300)
-    {
+    //if(calo<1000||calo>3300)
+    //{
     printf("\t\t\tTHATS UNHEALTHY FOR YOU!\n");
     printf("\t\t\tTRY TO CONSUME CALORIES BETWEEN YOUR AGE,GENDER AND BMI\n");
     printf("\t\t\t*****MALE*****\n");
-     if(age>=2&&age<=4)
+    if(age>=2&&age<=4)
     printf("\t\t\t|AGE:2-4   |CALORIES:1000-1600");
     else if(age>=5&&age<=8)
     {
@@ -61,36 +62,33 @@ int GEN()
     {
     printf("\t\t\t|AGE:+60   |CALORIES:2000-2600");
     }
-
-    }
-    if(calo>=1000&&calo<=3200)
-        {
-        printf("\t\t\t*****MALE DIET PLAN*****\n");
-        if (age>=2&&age<=4&&calo>=1000&&calo<=1600)
+    
+    printf("\t\t\t*****MALE DIET PLAN*****\n");
+    if (age>=2&&age<=4)
             {
             printf("\t\t\tBreakfast- fruit smoothie, apple \n\t\t\tLunch- yogurt & strawberries \n\t\t\tDinner- tomato soup, avocado toast \n\t\t\tSnack- almonds");
             }
-        else if(age>=5&&age<=8&&calo>=1200&&calo<=2000)
+        else if(age>=5&&age<=8)
             {
             printf("Breakfast- banana and almond butter toast, whole wheat bread \n\t\t\tLunch- maple strawberries and cream, almonds  \n\t\t\tDinner- spinach and sun-dried tomato sandwich, roasted broccoli \n\t\t\tSnack- apples and almond butter");
             }
-        else if(age>=9&&age<=13&&calo>=1600&&calo<=2600)
+        else if(age>=9&&age<=13)
             {
             printf("Breakfast- banana and almond butter toast, nonfat yogurt \n\t\t\tLunch- kale white bean and pesto salad, cinnamon honey cottage cheese \n\t\t\tDinner- seitian skillet with pepper and onions,hummus \n\t\t\tSnack- lemon avocado salad");
             }
-        else if(age>=14&&age<=18&&calo>=2000&&calo<=3200)
+        else if(age>=14&&age<=18)
             {
             printf("Breakfast- pancakes, apple \n\t\t\tLunch-peanut butter and jelly \n\t\t\tDinner- pasta, microwaved sweet potato \n\t\t\tSnack- mango triffe");
             }
-        else if(age>=19&&age<=30&&calo>=2400&&calo<=3000&&gen=='M')
+        else if(age>=19&&age<=30)
             {
             printf("Breakfast- bagel with cream cheese,oranges \n\t\t\tLunch-peanut butter & jelly \n\t\t\tDinner- pita pizza, roasted asparagus \n\t\t\tSnack- cottage cheese with raspberries");
             }
-        else if(age>=31&&age<=59&&calo>=2200&&calo<3000&&gen=='M')
+        else if(age>=31&&age<=59)
             {
             printf("Breakfast- burrito \n\t\t\tLunch-hummus and veggie sandwich \n\t\t\tDinner- flat bread pizza, garlic green beans \n\t\t\tSnack- fruit smoothie");
             }
-        else if(age>=60&&calo>2000&&calo<2600&&gen=='M')
+        else if(age>=60)
             {
             printf("Breakfast- chocolate covered berry smoothie \n\t\t\tLunch-potato chips sandwich \n\t\t\tDinner- pasta la checca \n\t\t\tSnack- apple");
             }
@@ -98,7 +96,7 @@ int GEN()
     }
     else if (s1==0)
     {
-        if(calo<1000||calo>3300)
+        if()
         {
         printf("\t\t\t*****FEMALE*****\n");
         if(age>=2&&age<=4)
@@ -132,34 +130,34 @@ int GEN()
         }
 
         }
-        if(calo>=1000&&calo<3300)
+        if()
             {
                 printf("\t\t\tFEMALE DIET PLAN");
-                if(age>=2&&age<=4&&calo>=1000&&calo<=1400)
+                if(age>=2&&age<=4)
                     {
                     printf("Breakfast- apple, strawberry and flax smoothie \n\t\t\tLunch-peanut butter yogurt/avocado/almonds \n\t\t\tDinner- steamed broccoli with olive oil and parmesan  \n\t\t\tSnack- seasoned mashed chickpeas");
                     }
-                else if(age>=5&&age<=8&&calo>=1200&&calo<=1800)
+                else if(age>=5&&age<=8)
                     {
                     printf("Breakfast- strawberry yogurt with strawberries \n\t\t\tLunch-kale white bean and pesto salad \n\t\t\tDinner- bowties with  broccoli \n\t\t\tSnack- banana, almond, cheese slices ");
                     }
-                else if(age>=9&&age<=13&&calo>1400&&calo<=2200)
+                else if(age>=9&&age<=13)
                     {
                     printf("Breakfast- strawberry with green smoothie, buttered toast \n\t\t\tLunch-apple and vanilla-cinnamon yogurt snack,grapes \n\t\t\tDinner- open face veggie hummus  lentil toast , parmesian chips \n\t\t\tSnack- banana");
                     }
-                else if(age>=14&&age<=18&&calo>1800&&calo<=2400)
+                else if(age>=14&&age<=18)
                     {
                     printf("Breakfast- powerball smoothie \n\t\t\tLunch-green pea pesto,cottage cheese with cucumber and tomato \n\t\t\tDinner- flat bread pizza \n\t\t\tSnack- nonfat Greek yogurt");
                     }
-                else if(age>=19&&age<=30&&calo>=2000&&calo<2400)
+                else if(age>=19&&age<=30)
                     {
                     printf("Breakfast- orange mango smoothie with chia \n\t\t\tLunch-mango strawberry and arugula salad,banana \n\t\t\tDinner- pasta pascal \n\t\t\tSnack- peppered cottage cheese,apple");
                     }
-                else if(age>=31&&age<=59&&calo>1800&&calo<2200)
+                else if(age>=31&&age<=59)
                     {
                     printf("Breakfast- carrot orange grapefruit juice \n\t\t\tLunch-big sandwich \n\t\t\tDinner- summer pasta \n\t\t\tSnack- banana peanut butter and raisins,blueberries");
                     }
-                else if(age>=60&&calo>=1600&&calo<2000)
+                else if(age>=60)
                     {
                     printf("Breakfast- blueberry smoothie ,apple \n\t\t\tLunch- Mexican tortilla rolls \n\t\t\tDinner- black bean quesadillas, pan fried corn \n\t\t\tSnack- peppered cottage cheese, cucumber,slices");
                     }
@@ -190,12 +188,15 @@ int BMI(float *height,float *weight)
     scanf("%f",weight);
     printf("\n\n");
     *b=(*weight)/((*height)*(*height));
-    printf("\t\t\tTHE BMI IS:%f\n\n",*b);
+    return *b;
 }
 int main()
 {
     float height1,weight1;
     //*gen=gender;
     printf("\t\t\t********************HEALTH AND WELLNESS PROGRAMME********************\n");
+    BMI();
     GEN();
+    
 }
+

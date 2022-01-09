@@ -38,37 +38,37 @@ int GEN()
             printf("\t\t\tDIET SUGGISTIONS\n");
             printf("\t\t\tBreakfast- fruit smoothie, apple \n\t\t\tLunch- yogurt & strawberries \n\t\t\tDinner- tomato soup, avocado toast \n\t\t\tSnack- almonds\n");
             }
-        if(age>=5&&age<=8&&calo<1000||calo>3300);
+        else if(age>=5&&age<=8&&calo<1000||calo>3300)
             {
             printf("\t\t\t|AGE:5-8   |CALORIES:1200-2000\n");
             printf("\t\t\tDIET SUGGISTIONS\n");
             printf("\t\t\tBreakfast- banana and almond butter toast, whole wheat bread \n\t\t\tLunch- maple strawberries and cream, almonds  \n\t\t\tDinner- spinach and sun-dried tomato sandwich, roasted broccoli \n\t\t\tSnack- apples and almond butter\n");
             }
-        if(age>=9&&age<=13&&calo<1000||calo>3300);
+        else if(age>=9&&age<=13&&calo<1000||calo>3300)
             {
             printf("\t\t\t|AGE:9-13  |CALORIES:1600-2600\n");
             printf("\t\t\tDIET SUGGISTIONS\n");
             printf("\t\t\tBreakfast- banana and almond butter toast, nonfat yogurt \n\t\t\tLunch- kale white bean and pesto salad, cinnamon honey cottage cheese \n\t\t\tDinner- seitian skillet with pepper and onions,hummus \n\t\t\tSnack- lemon avocado salad\n");
             }
-        if(age>=14&&age<=18&&calo<1000||calo>3300);
+        else if(age>=14&&age<=18&&calo<1000||calo>3300)
             {
             printf("\t\t\t|AGE:14-18 |CALORIES:2000-3200\n");
             printf("\t\t\tDIET SUGGISTIONS\n");
             printf("\t\t\tBreakfast- pancakes, apple \n\t\t\tLunch-peanut butter and jelly \n\t\t\tDinner- pasta, microwaved sweet potato \n\t\t\tSnack- mango triffe\n");
             }
-        if(age>=19&&age<=30&&calo<1000||calo>3300);
+        else if(age>=19&&age<=30&&calo<1000||calo>3300)
             {
             printf("\t\t\t|AGE:19-30 |CALORIES:2400-3000\n");
             printf("\t\t\tDIET SUGGISTIONS\n");
             printf("\t\t\tBreakfast- bagel with cream cheese,oranges \n\t\t\tLunch-peanut butter & jelly \n\t\t\tDinner- pita pizza, roasted asparagus \n\t\t\tSnack- cottage cheese with raspberries\n");
             }
-        if(age>=31&&age<=59&&calo<1000||calo>3300);
+        else if(age>=31&&age<=59&&calo<1000||calo>3300)
             {
             printf("\t\t\t|AGE:31-59 |CALORIES:2200-3000\n");
             printf("\t\t\tDIET SUGGISTIONS\n");
             printf("\t\t\tBreakfast- burrito \n\t\t\tLunch-hummus and veggie sandwich \n\t\t\tDinner- flat bread pizza, garlic green beans \n\t\t\tSnack- fruit smoothie\n");
             }
-        if(age>=60&&calo<1000||calo>3300)
+        else if(age>=60&&calo<1000||calo>3300)
             {
             printf("\t\t\t|AGE:+60   |CALORIES:2000-2600\n");
             printf("\t\t\tDIET SUGGISTIONS\n");
@@ -123,32 +123,35 @@ int GEN()
         {
         printf("\t\t\t|AGE:5-8   |CALORIES:1200-1800\n");
         printf("\t\t\tDIET SUGGISTIONS\n");
-
+        printf("\t\t\tBreakfast- strawberry yogurt with strawberries \n\t\t\tLunch-kale white bean and pesto salad \n\t\t\tDinner- bowties with  broccoli \n\t\t\tSnack- banana, almond, cheese slices\n");
         }
         else if(age>=9&&age<=13)
         {
         printf("\t\t\t|AGE:9-13  |CALORIES:1400-2200\n");
         printf("\t\t\tDIET SUGGISTIONS\n");
-
+        printf("\t\t\tBreakfast- strawberry with green smoothie, buttered toast \n\t\t\tLunch-apple and vanilla-cinnamon yogurt snack,grapes \n\t\t\tDinner- open face veggie hummus  lentil toast , parmesian chips \n\t\t\tSnack- banana\n");
         }
         else if(age>=14&&age<=18)
         {
         printf("\t\t\t|AGE:14-18 |CALORIES:1800-2400\n");
         printf("\t\t\tDIET SUGGISTIONS\n");
-
+        printf("\t\t\tBreakfast- powerball smoothie \n\t\t\tLunch-green pea pesto,cottage cheese with cucumber and tomato \n\t\t\tDinner- flat bread pizza \n\t\t\tSnack- nonfat Greek yogurt\n");
         }
         else if(age>=19&&age<=30)
         {
         printf("\t\t\t|AGE:19-30 |CALORIES:2000-2400\n");
         printf("\t\t\tDIET SUGGISTIONS\n");
+        printf("\t\t\tBreakfast- orange mango smoothie with chia \n\t\t\tLunch-mango strawberry and arugula salad,banana \n\t\t\tDinner- pasta pascal \n\t\t\tSnack- peppered cottage cheese,apple\n");
         }
         else if(age>=31&&age<=59)
         {
         printf("\t\t\t|AGE:31-59 |CALORIES:1800-2200\n");
+        printf("\t\t\tBreakfast- carrot orange grapefruitjuice \n\t\t\tLunch-big sandwich \n\t\t\tDinner- summer pasta \n\t\t\tSnack- banana peanut butter and raisins,blueberries\n");
         }
         else
         {
         printf("\t\t\t|AGE:+60   |CALORIES:1600-2000\n");
+        printf("\t\t\tBreakfast- blueberry smoothie ,apple \n\t\t\tLunch- Mexican tortilla rolls \n\t\t\tDinner- black bean quesadillas, pan fried corn \n\t\t\tSnack- peppered cottage cheese, cucumber,slices\n");
         }
 
         }

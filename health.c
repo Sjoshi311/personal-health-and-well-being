@@ -206,7 +206,7 @@ int GEN()
     else
     {
     printf("\t\t\tCHOOSE FROM(M/F)\n\n");
-    return GEN();
+    return GEN(gen,age,calo);
     }
 
 }
@@ -243,4 +243,3 @@ int main()
     bmi(height1,weight1,b);
     GEN();
 }
-

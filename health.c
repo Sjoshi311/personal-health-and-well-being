@@ -190,7 +190,7 @@ int BMI(float *height,float *weight)
     scanf("%f",weight);
     printf("\n\n");
     *b=(*weight)/((*height)*(*height));
-    printf("\t\t\THE BMI IS:%f\n\n",*b);
+    printf("\t\t\tTHE BMI IS:%f\n\n",*b);
 }
 int main()
 {
